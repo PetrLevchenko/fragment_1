@@ -22,13 +22,12 @@ h4 {
 .container_1920 {
   max-width: 1920px;
   border: 1px solid #000;
-  height: 800px;
   background: #fff;
 }
 
 .offers {
   max-width: 1296px;
-  margin: 162px auto;
+  margin: 162px auto 0;
 }
 
 .text__h1 {
@@ -48,6 +47,9 @@ h4 {
   width: 306px;
   height: 344px;
   background-color: var(--accent-1);
+}
+.offers__item:last-child {
+  margin-bottom: 160px;
 }
 
 .img {
@@ -88,5 +90,26 @@ h4 {
   padding-right: 30px;
     padding-top: 8px;
 }
-.arrow {
+@media screen and (max-width: 1440px) {
+  .offers__grid {
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+}
+@media screen and (max-width: 780px) {
+  .offers__grid {
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+}
+}
+@media screen and (max-width: 460px) {
+  .text__h1 {
+    font-size: 36px;
+  }
+  .offers {
+    margin-top: 80px;
+  }
+  .offers__item:last-child {
+  margin-bottom: 80px;
+}
 }
