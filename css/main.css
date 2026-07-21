@@ -130,7 +130,7 @@ h4 {
   .text__h1 {
     font-size: 33px;
     word-wrap: break-word;
-    width: 262px;
+    max-width: 298px;
     margin: 0 auto 30px;
   }
 
